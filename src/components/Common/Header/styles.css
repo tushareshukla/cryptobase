@@ -1,5 +1,63 @@
-.header{
-    width: 100%;
-    color: white;
-    background-color: #000;
+.navbar{
+    /* width: 100%; */
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    /* position: -webkit-sticky; */
+    /* position: sticky; */
+    top: 0;
+    /* z-index: 1000; */
+}
+.logo{
+    font-size: 1.2rem ;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: 100%;
+     */
+     gap: 1.5rem;
+}
+.links{
+   color: var(--gray);
+   font-weight: 600;
+   font-size: 0.9rem;
+}
+
+.links:hover{
+    color: var(--blue);
+    transition: all 0.3s ease;
+}
+.modileDrawer{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .navbar{
+        padding: 1.5rem;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    links{
+        font-size: 0.8rem;
+    }
+    .container{
+        display: none;
+    
+    }
+
+    .modileDrawer{
+        display: block;
+    }
+    .containerMobile{
+        width: 40vw;
+        background-color: var(--black);
+        height: 100vh;
+        padding:1.5rem
+    }
 }
