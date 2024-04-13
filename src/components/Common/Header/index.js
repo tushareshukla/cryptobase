@@ -16,8 +16,8 @@ const Header = () => {
           <a href='/'>    <p className='links'>Compare </p></a>
           <a href='/'>     <p className='links'>Watchlist</p></a>
           {/* <a href='/'>      <p className='links'>Dashboard</p></a> */}
-          <a href ="/">
-            <Button text ={'Dashboard'}/> </a>
+          <a href ="/#">
+            <Button  text ={'Dashboard'} onClick={() => console.log("Button Clicked")}/> </a>
             <Switch  defaultChecked  />
         </div>
         <div className='modileDrawer'>
