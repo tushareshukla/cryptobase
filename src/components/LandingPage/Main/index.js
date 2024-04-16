@@ -1,6 +1,8 @@
 import Button from "../../Common/Button"
 import "./styles.css"
 import React from 'react'
+import iphone from "../../../assets/iphone.png"
+import gradient from "../../../assets/gradient.png"
 
 const MainComponet = () => {
   return (
@@ -16,9 +18,9 @@ const MainComponet = () => {
     <Button text={'Share App'} outlined={true}/>   
   </div>
         </div>
-        <div className=" right-component">
-            Image
-
+        <div className="right-component">
+           <img className="iphone" src={iphone} alt="op"></img>
+           <img className="gradinet" src={gradient} alt ="op1"></img>
             </div>
     </div>
   )
