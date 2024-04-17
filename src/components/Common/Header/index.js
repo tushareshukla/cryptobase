@@ -3,6 +3,7 @@ import './styles.css'
 import AnchorTemporaryDrawer from './drawer'
 import Button from '../Button'
 import { Switch } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -12,12 +13,12 @@ const Header = () => {
        
         <div className='container'>
         
-           <a href='/'> <p className='links'>Home</p></a>
-          <a href='/'>    <p className='links'>Compare </p></a>
-          <a href='/'>     <p className='links'>Watchlist</p></a>
+           <Link to='/'> <p className='links'>Home</p></Link>
+          <Link to='/compare'>    <p className='links'>Compare </p></Link>
+          <Link to='/watchlist'>     <p className='links'>Watchlist</p></Link>
           {/* <a href='/'>      <p className='links'>Dashboard</p></a> */}
-          <a href ="/#">
-            <Button  text ={'Dashboard'} onClick={() => console.log("Button Clicked")}/> </a>
+          <Link to ="/dashboard">
+            <Button  text ={'Dashboard'} onClick={() => console.log("Button Clicked")}/> </Link>
             <Switch  defaultChecked  />
         </div>
         <div className='modileDrawer'>
