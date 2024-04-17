@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Header from '../components/Common/Header'
 const DashboardPage = () => {
   return (
-    <div>DashboardPage</div>
+    <div>
+        <Header/>
+    </div>
   )
 }
 

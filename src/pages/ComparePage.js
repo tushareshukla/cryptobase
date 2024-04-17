@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Header from '../components/Common/Header'
 const ComparePage = () => {
   return (
-    <div>ComparePage</div>
+    <div><Header/></div>
   )
 }
 
