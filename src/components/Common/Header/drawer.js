@@ -38,11 +38,11 @@ export default function AnchorTemporaryDrawer() {
           {/* <a href='/'>      <p className='links'>Dashboard</p></a> */}
           <Link to="/dashboard">
             <Button
-              text={"Dashboard"}
+              text="Dashboard"
               onClick={() => console.log("Button Clicked")}
-            />
+            ></Button>
           </Link>
-        </div>
+     </div>
       </Drawer>
     </div>
   );
