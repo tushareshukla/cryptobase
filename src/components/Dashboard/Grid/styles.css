@@ -1,0 +1,8 @@
+.grid-container{
+    width: 350px;
+    height: 350px;
+    background-color: var(--darkgrey);
+    border: 2px solid  var(--darkgrey);
+    border-radius: 1.3rem;
+
+}

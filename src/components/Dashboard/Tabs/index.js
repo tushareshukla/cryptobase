@@ -4,6 +4,8 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { ThemeProvider, createTheme } from "@mui/material";
+import Grid from "../Grid";
+import "./styles.css";
 
 export default function Tabs({ coins }) {
   const [value, setValue] = useState("grid");
@@ -35,17 +37,11 @@ export default function Tabs({ coins }) {
           <Tab label="List" value="list" sx={styles} />
         </TabList>
         <TabPanel value="grid">
+          <div className="grid-style">
           {coins.map((coin, index) => {
-            return (
-             <div key={index}>
-              <img src={coin.image} alt={coin.name} />
-               <p >
-                {index + 1}.{coin.name}
-              </p>
-             </div>
-            );
+            return <Grid coin = {coin} key ={index}/>
           })}
-        </TabPanel>
+            </div></TabPanel>
         <TabPanel value="list">
         {coins.map((coin, index) => {
             return (
