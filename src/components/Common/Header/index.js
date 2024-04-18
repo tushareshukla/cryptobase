@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <div className='navbar'>
-        <h1 className='logo'>CryptoBase<span style ={{color:'var(--blue)'}}>.</span></h1>
+        <h1 className='logo'>Crypt0Base<span style ={{color:'var(--blue)'}}>.</span></h1>
        
         <div className='container'>
         
