@@ -1,8 +1,98 @@
-.grid-container{
-    width: 350px;
-    height: 350px;
-    background-color: var(--darkgrey);
-    border: 2px solid  var(--darkgrey);
-    border-radius: 1.3rem;
+.grid-container {
+  width: 350px;
+  height: 350px;
+  background-color: var(--darkgrey);
+  border: 2px solid var(--darkgrey);
+  border-radius: 1.3rem;
+}
 
+.info-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+
+.coin-logo {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.coin-symbol {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0;
+}
+.coin-name {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: var(--grey);
+  text-transform: capitalize;
+  margin: 0;
+}
+.name-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.chip-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 1.5rem;
+}
+
+.price-chip {
+  border: 2px solid var(--green);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--green);
+}
+.price-chip:hover {
+  background-color: var(--green);
+  color: var(--darkgrey);
+  transition: all ease-in-out 0.3s;
+}
+.red-chip {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.red-chip:hover {
+  background-color: var(--red);
+  color: var(--darkgrey);
+  transition: all ease-in-out 0.3s;
+}
+.icon-chip {
+  border: 2px solid var(--green);
+  /* border-radius: 2rem; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--green);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
+}
+.icon-chip:hover {
+  background-color: var(--green);
+  color: var(--darkgrey);
+  transition: all ease-in-out 0.3s;
+}
+.icon-chip-red {
+  border: 2px solid var(--red) !important;
+  color: var(--red) !important;
+}
+.icon-chip-red:hover {
+  background-color: var(--red) !important;
+  color: var(--darkgrey) !important;
+  transition: all ease-in-out 0.3s !important;
 }
